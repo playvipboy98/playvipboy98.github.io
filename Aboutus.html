@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">        <!-- This is English language --->
+  <head>
+
+    <meta charset="utf-8">  <!-- It includes ALL the character set of English-->
+                            <!-- AA, BB, aa, bb, 1, 2, !, @, # etc. -->
+
+    <!-- For a Responsive website - you need to input the below mentioned code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- You need to copy paste few CDM codes -->
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- to make my carasoul images responsive -->
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+video {
+  width: 100%;
+  height: auto;
+}
+
+  #more {display: none;}
+
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+  
+.footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #262626;
+  color: white;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-twitter {
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+.fa-google {
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+.fa-youtube {
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+.fa-instagram {
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+.fa-pinterest {
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+.fa-flickr {
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+  </style>
+
+ <script>
+ 	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+ </script>
+
+</head>
+
+<!-- Almost done -- Lets start the program -->
+
+<!--- ----------------------------------------------------------------------------- -->
+<body>
+	
+	<!-- Navbar codes -->
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="index.html">FoodTour</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!-- will do a small styling inorder to move your nav elements to right side of the navbar -->
+    <!-- ML stands for margin left, MR - Margin right -->
+    <!-- The code works opposite here, if you wanna move things to right, use ML and if you wanna move things to left, use MR -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Aboutus.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="Contactus.html">Contact us</a>
+    </li>
+  </ul>
+
+  <!-- I need a Search input form -->
+   <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+
+<!-- NAVBAR code ends here.............. ........ -->
+<section>
+  <br>
+  <h1 style="text-align: center;">About us</h1>
+  <!-- I need a small line under the heading -- styling element as per my wireframe -->
+  <hr class="w-100">
+
+<!-- As per my design, I have divided the screen into 2 halfs-->
+<!-- I want image in 6 columns left side of the screen -->
+<!-- I want TEXT in 6 columns RIGHT side of the screen -->
+
+<div class="container">
+  <div class="row">
+
+    <!-- Image content in left side -->
+    <div class="col">
+      <img src="E:\Web design 2 Shurti\Foodtour\A.jpg" width="400" height="450">
+    </div>
+        
+        <!-- Body content in right side-->
+        <div class="col">
+          <br>
+      <h2>Food Tour</h2>
+      <!-- Read more read less --->
+      <p>Photography is my favorite hobby. It refreshes the mind and provides a welcome change from such dull and dreary routine of daily life. I am particularly interested in capturing landscapes, especially during twilight.<span id="dots">...</span><span id="more">Photography teaches me a lot of useful things. I have to take all aspects of things into consideration. I have to look from all directions to capture a picture. Color combination is also a very important factor. While taking pictures of animals or birds I have to wait for hours and I learned about patience.<br>Photos provide a more emotional attachment than words often do. They often capture the atmosphere that I cannot find the words for.<br>Photographs, perhaps more than anything to me, I believe that they are the documentations of our lives. The ability of photography to connect to our past, associate us in an event, and preserve memories without words or interpretation makes it an influential hobby for all of us.<br>Photography is quite expensive hobby and to be a good photographer you need a lot of training and guidance. So I attended a few short courses to pursue my hobby. I’ve read many articles and magazines on the subject of photography, too.<br>Photography has made my senses keen and my imagination sharp. I have developed a wonderful aesthetic sense. I have my own albums of all these photographs. And when I really have nothing to do I just leaf through the photo albums and interesting reminiscences rush through my mind.</span></p>
+
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-primary">Read more</button>
+    </div>
+  </div>
+</div>
+<br>
+<h2 style="text-align: center;">Introducing</h2>
+<br>
+<video width="400" controls>
+
+  <source src="E:\Web design 2 Shurti\Foodtour\123.mp4" type="video/mp4">
+  <source src="E:\Web design 2 Shurti\Foodtour\123.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+
+</section>
+<!-- Footer -->
+<section>
+
+
+ <div class="footer">
+  <br>
+  <h2>FoodTour</h2>
+
+<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+<a href="https://www.flickr.com/" class="fa fa-flickr"></a>
+
+  <p>Coppyright2021@</p>
+  
+ </div>
+</section>
+</body>
+</html>
